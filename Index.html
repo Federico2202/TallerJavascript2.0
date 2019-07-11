@@ -5,30 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Index</title>
-    <style>
-    
-    body{
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-        width: 25em;
-        margin: auto;
-        padding: 5em;
-    }
+    <style>
 
     </style>
 </head>
 <body>
-    <form>
+    <div class="container">
+    <form >
     <p>
-        <label for="nombres">Nombres</label>
-        <input type="text" name="nombres" id="nombres">
+        <label for="nombres"><h3>Nombres</h3></label>
+        <input type="text" class="form-control" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
     </p>
     <p>
-        <label for="apellidos">Apellidos</label>
-        <input type="text" name="apellidos" id="apellidos">
+        <label for="apellidos"><h3>Apellidos</h3></label>
+        <input type="text" class="form-control" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
     </p>
     <p>
-        <label for="">Genero</label>
-        <select name="" id="">
+        <label for=""><h3>Genero</h3></label>
+        <select name="" class="form-control-lg" id="generos">
+            <option value="">--Elija una opcion--</option>
             <option value="">Masculino</option>
             <option value="">Femenino</option>
         </select>
@@ -37,40 +34,27 @@
     <p>
         <fieldset>
             <legend>Estado Civil</legend>
-                <input type="radio">
-                <label for="">Casado</label>
-                <input type="radio">
-                <label for="">Soltero</label>
+                <input name="casado" type="radio" id="radio1">
+                <label for="casado"><h4>Casado</h4></label>
+                <input name="soltero" type="radio" id="radio2">
+                <label for="soltero"><h4>Soltero</h4></label>
         </fieldset>
        
     </p>
     </form>
 
-    <p><input type="button" value="Agregar"></p>
+    <p><input id="boton" class="btn btn-dark" type="button" value="Agregar"></p>
     
-    <table style="border: solid red 1px">
+    <table class="table" id="tabla" style="border: solid black 1px">
         <tr style="border: solid black 1px">
-            <td   style="border: solid black 1px">Nombres</td>
-            <td   style="border: solid black 1px">Apellidos</td>
-            <td   style="border: solid black 1px">Genero</td>
-            <td   style="border: solid black 1px">Estado Civil</td>
+            <td   style="border: solid black 1px"><h3>Nombres</h3></td>
+            <td   style="border: solid black 1px"><h3>Apellidos</h3></td>
+            <td   style="border: solid black 1px"><h3>Genero</h3></td>
+            <td   style="border: solid black 1px"><h3>Estado Civil</h3></td>
         </tr>
-        <tr>
-            <td   style="border: solid black 1px">
-                Juan
-            </td>
-            <td   style="border: solid black 1px">
-                Perez
-            </td>
-            <td   style="border: solid black 1px">
-                Masculino
-            </td>
-            <td   style="border: solid black 1px">
-                Casado
-            </td>
-        </tr>
-    </table>
 
-    <script src="Scrip.js"></script>
+    </table>
+    </div>
+    <script src="Script.js"></script>
 </body>
 </html>
